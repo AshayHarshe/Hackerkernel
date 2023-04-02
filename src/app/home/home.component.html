@@ -1,0 +1,9 @@
+<div  class="home">
+    <h1>Home Page</h1>
+    <form class="common-form" [formGroup]="addToCartForm">
+        <p class="error-p"></p>
+        <input type="text" class="form-input" name="productName" placeholder="Enter product name" formControlName="productName">  
+        <input type="number" class="form-input" name="price" placeholder="Enter Price" formControlName="price">
+        <button class="form-button"(click)="submit()">ADD</button>       
+    </form>
+</div>

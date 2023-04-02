@@ -1,0 +1,12 @@
+
+
+  
+<div  class="login">
+    <h1>Login Page</h1>
+    <form class="common-form" [formGroup]="loginForm">
+        <input type="text" formControlName="email" class="form-input" name="email" placeholder="Enter User Email">
+        <input type="password" formControlName="password" class="form-input" name="password" placeholder="Enter User Password" minlength="2"
+            maxlength="20">
+        <button class="form-button"   (click)="loginbtn()">Login</button>   
+    </form>
+</div>

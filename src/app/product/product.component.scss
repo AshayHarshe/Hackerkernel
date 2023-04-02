@@ -1,0 +1,32 @@
+.deletebtn{
+   background-color: red;
+   color: white;
+   margin-left:30px ;
+   border-radius: 10px;
+   font-size: large;
+   padding:7px;
+   border: none;
+    box-shadow: 3px 2px 5px 2px gray;
+}
+.addtocart{
+    background-color: green;
+    color: white;
+    margin-left:30px ;
+    border-radius: 10px;
+    font-size: large;
+    padding:7px;
+    border: none;
+    box-shadow: 3px 2px 5px 2px gray;
+}
+
+.container{
+    margin-left: 350px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+   width: 700px;
+    padding: 40px;
+    margin-top:100px;
+    box-shadow: 5px 5px  10px 2px black;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+
+    <table class="table table-hover">
+        <!-- <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr> -->
+    <!-- </thead> -->
+    <tbody>
+        <tr *ngFor="let product of productList; let i = index">
+            <!-- <td>{{i+1}}</td> -->
+            <td >{{product.productName}}</td>
+            <td>Rs.{{product.price}}</td>
+            <td>             
+                <!-- <button *ngIf="addToCart == true" (click)="addToCartButton()">Add TO Cart</button>
+                    <button *ngIf="addToCart == false">Added TO Cart</button> -->
+                    <button class="addtocart" *ngIf="!product.isAddedToCart" (click)="addToCart(product)">Add to Cart</button>
+                    <span *ngIf="product.isAddedToCart">Product Added to Cart</span>
+                    <button (click)="delete(i)" class="deletebtn">Delete</button>               
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
